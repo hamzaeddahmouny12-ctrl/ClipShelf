@@ -1,0 +1,28 @@
+<Window x:Class="ClipShelf.Views.ShutdownTimerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:ClipShelf.ViewModels"
+        Title="Shutdown Timer" Height="220" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="White">
+    <Window.DataContext>
+        <vm:ShutdownTimerViewModel />
+    </Window.DataContext>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Shutdown timer" FontSize="18" FontWeight="Bold" Foreground="#2E75B6" Margin="0,0,0,10"/>
+        <TextBlock Grid.Row="1" Text="Enter time before shutdown (seconds):" Margin="0,0,0,6"/>
+        <TextBox Grid.Row="2" Text="{Binding Seconds, UpdateSourceTrigger=PropertyChanged}" Width="120" HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Start" Command="{Binding StartCommand}" Padding="10,6" Margin="0,0,8,0" Background="#C75050" Foreground="White" FontWeight="SemiBold"/>
+            <Button Content="Cancel" Command="{Binding CancelCommand}" Padding="10,6" Margin="0,0,8,0" Background="#999" Foreground="White" FontWeight="SemiBold"/>
+            <Button Content="Close" Click="CloseButton_Click" Padding="10,6"/>
+        </StackPanel>
+    </Grid>
+</Window>

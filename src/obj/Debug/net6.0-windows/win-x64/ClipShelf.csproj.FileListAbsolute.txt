@@ -1,0 +1,6 @@
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\ClipShelf.csproj.AssemblyReference.cache
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\App.g.cs
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\ClipShelf_MarkupCompile.cache
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\Views\HistoryView.g.cs
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\GeneratedInternalTypeHelper.g.cs
+C:\Users\hamza\OneDrive\Bureau\FIRST TEST\ClipShelf\src\obj\Debug\net6.0-windows\win-x64\ClipShelf_MarkupCompile.lref

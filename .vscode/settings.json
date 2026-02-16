@@ -1,0 +1,17 @@
+{
+    // enable VS Code's terminal shell integration features
+    "terminal.integrated.shellIntegration.enabled": true,
+
+    // make sure decorations (exit‑code badges) are shown
+    "terminal.integrated.shellIntegration.decorationsEnabled": "always",
+
+    // IntelliSense suggestions in the terminal
+    "terminal.integrated.suggest.enabled": true,
+    "terminal.integrated.suggest.quickSuggestions": true,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+    "terminal.integrated.suggest.runOnEnter": false,
+    "terminal.integrated.suggest.selectionMode": "recentlyUsed",
+
+    // history length used by the "Run Recent Command" picker
+    "terminal.integrated.shellIntegration.history": 1000
+}
