@@ -1,0 +1,28 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ main, feat-OG ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore
+        run: dotnet restore src/ClipShelf.csproj
+
+      - name: Build
+        run: dotnet build src/ClipShelf.csproj --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test --no-restore --verbosity normal

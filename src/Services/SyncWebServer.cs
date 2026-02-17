@@ -177,7 +177,7 @@ public class SyncWebServer : IDisposable
         }
     }
 
-    private static bool IsLocalNetwork(string ipStr)
+    internal static bool IsLocalNetwork(string ipStr)
     {
         if (string.IsNullOrEmpty(ipStr) || ipStr == "127.0.0.1" || ipStr == "::1") return true;
         if (!IPAddress.TryParse(ipStr, out var ip) || ip == null) return false;
@@ -367,7 +367,7 @@ public class SyncWebServer : IDisposable
         }
     }
 
-    private static string? ParseBoundary(string contentType)
+    internal static string? ParseBoundary(string contentType)
     {
         const string key = "boundary=";
         int i = contentType.IndexOf(key, StringComparison.OrdinalIgnoreCase);
