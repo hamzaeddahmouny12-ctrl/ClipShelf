@@ -22,7 +22,7 @@ jobs:
         run: dotnet restore src/ClipShelf.csproj
 
       - name: Build
-        run: dotnet build src/ClipShelf.csproj --configuration Release --no-restore
+        run: dotnet build src/ClipShelf.csproj --configuration Release --no-restore --verbosity normal
 
       - name: Run tests
         run: dotnet test --no-restore --verbosity normal
